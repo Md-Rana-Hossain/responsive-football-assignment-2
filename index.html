@@ -12,10 +12,18 @@
 
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/df16d52d2f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header id="header-background">
+
+        <!-- toggle-icon starts  -->
+        <div id="toggle-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- toggle-icon ends  -->
+
         <!-- navbar start -->
         <nav>
             <div class="nav-link">
@@ -25,7 +33,7 @@
                 <a href="#" target="_blank" rel="noopener noreferrer">Upcomming Matches</a>
                 <a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
             </div>
-            <div class="login-btn">
+            <div id="login-btn-1" class="login-btn">
                 <a href=""><i class="fas fa-sign-in-alt"></i>Login</a>
             </div>
         </nav>
@@ -33,23 +41,21 @@
 
         <!-- top section starts -->
         <section class="top-section container">
-            <div class="half-width">
-                <!-- <h1>Conmebol</h1>
-                <h1>Capa America</h1>
-                <h1>2021</h1> -->
+            <div id="top-part-1" class="half-width ">
                 <h1>Conmebol Copa America 2021</h1>
                 <div class="watch-live-btn">
                     <a href="#">Watch live<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="half-width">
+            <div id="top-part-2" class=" half-width">
                 <img src="images/banner.png" alt="">
             </div>
         </section>
         <!-- top section ends -->
     </header>
+
     <main>
-        <!-- Players Section -->
+        <!-- Players Section Starts -->
         <section class="players container">
             <div class="player">
                 <div class="player-info">
@@ -146,6 +152,7 @@
         <!-- Players Section Ends -->
 
         <!-- Match Highlights Section Starts  -->
+
         <section class="match-highlights">
             <div class="left-part">
                 <h1>Final Highlights Copa America 2021</h1>
@@ -161,80 +168,82 @@
             </div>
         </section>
 
-        <!-- Match Highlights Section Starts  -->
+        <!-- Match Highlights Section Ends  -->
+
+        <!-- Additional Section "Upcoming Matches" For Bonus Marks Starts -->
+        <section class="upcoming-matches ">
+            <h2>Upcoming Matches !</h2>
+            <h3>Watch Live on <span class="logo">Football</span></h3>
+            <div class="match-schedule-flex">
+                <div class="match-schedule">
+                    <a target="_blank" href="https://onefootball.com/en/match/2225756">
+                        <div class="teams-info">
+                            <div>
+                                <div class="each-team">
+                                    <img src="images/team-icons/team-1.png" alt="">
+                                    <h4>Austria Klagenfurt</h4>
+                                </div>
+                                <div class="each-team">
+                                    <img src="images/team-icons/team-2.png" alt="">
+                                    <h4>Hartberg</h4>
+                                </div>
+                            </div>
+                            <div class="match-time">
+                                <p>Tomorrow</p>
+                                <span><i class="far fa-clock"></i>21:00</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://onefootball.com/en/match/2225760">
+                        <div class="teams-info">
+                            <div>
+                                <div class="each-team">
+                                    <img src="images/team-icons/team-3.png" alt="">
+                                    <h4>Ried</h4>
+                                </div>
+                                <div class="each-team">
+                                    <img src="images/team-icons/team-4.png" alt="">
+                                    <h4>Admira Walker</h4>
+                                </div>
+                            </div>
+                            <div class="match-time">
+                                <p>Tomorrow</p>
+                                <span><i class="far fa-clock"></i>12:00</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://onefootball.com/en/match/2225757">
+                        <div class="teams-info">
+                            <div>
+                                <div class="each-team">
+                                    <img src="images/team-icons/team-5.png" alt="">
+                                    <h4>Sturm Graz</h4>
+                                </div>
+                                <div class="each-team">
+                                    <img src="images/team-icons/team-6.png" alt="">
+                                    <h4>SCR Altach</h4>
+                                </div>
+                            </div>
+                            <div class="match-time">
+                                <p>Tomorrow</p>
+                                <span><i class="far fa-clock"></i>09:00</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="schedule-nav">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Additional Section "Upcoming Matches" For Bonus Marks Ends -->
 
     </main>
 
     <!-- footer sections starts  -->
-
-    <!-- Additional Match Highlights Video Section For Bonus Marks Starts -->
-    <section class="upcoming-matches ">
-        <h2>Upcoming Matches !</h2>
-        <h3>Watch Live on <span class="logo">Football</span></h3>
-        <div class="match-schedule">
-            <a target="_blank" href="https://onefootball.com/en/match/2225756">
-                <div class="teams-info">
-                    <div>
-                        <div class="each-team">
-                            <img src="images/team-icons/team-1.png" alt="">
-                            <h4>Austria Klagenfurt</h4>
-                        </div>
-                        <div class="each-team">
-                            <img src="images/team-icons/team-2.png" alt="">
-                            <h4>Hartberg</h4>
-                        </div>
-                    </div>
-                    <div class="match-time">
-                        <p>Tomorrow</p>
-                        <span><i class="far fa-clock"></i>21:00</span>
-                    </div>
-                </div>
-            </a>
-            <a target="_blank" href="https://onefootball.com/en/match/2225760">
-                <div class="teams-info">
-                    <div>
-                        <div class="each-team">
-                            <img src="images/team-icons/team-3.png" alt="">
-                            <h4>Ried</h4>
-                        </div>
-                        <div class="each-team">
-                            <img src="images/team-icons/team-4.png" alt="">
-                            <h4>Admira Walker</h4>
-                        </div>
-                    </div>
-                    <div class="match-time">
-                        <p>Tomorrow</p>
-                        <span><i class="far fa-clock"></i>12:00</span>
-                    </div>
-                </div>
-            </a>
-            <a target="_blank" href="https://onefootball.com/en/match/2225757">
-                <div class="teams-info">
-                    <div>
-                        <div class="each-team">
-                            <img src="images/team-icons/team-5.png" alt="">
-                            <h4>Sturm Graz</h4>
-                        </div>
-                        <div class="each-team">
-                            <img src="images/team-icons/team-6.png" alt="">
-                            <h4>SCR Altach</h4>
-                        </div>
-                    </div>
-                    <div class="match-time">
-                        <p>Tomorrow</p>
-                        <span><i class="far fa-clock"></i>09:00</span>
-                    </div>
-                </div>
-            </a>
-            <div class="schedule-nav">
-                <i class="fas fa-chevron-right"></i>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Additional Match Highlights Video Section For Bonus Marks Ends  -->
 
     <footer>
         <img src="images/Logo.jpg" alt="Website Logo">

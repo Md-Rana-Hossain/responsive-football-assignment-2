@@ -24,6 +24,19 @@ a{
     background-color: #2D25A0;
     padding-bottom: 80px;
 }
+/* toggle icon
+ */
+ #toggle-icon{
+     position: absolute;
+     top: 40px;
+     left: 105px;
+     display: none;
+ }
+ #toggle-icon i{
+     font-size: 40px;
+     color: white;
+ }
+
 /* navbar start */
 nav{
     display: flex;
@@ -35,17 +48,7 @@ nav{
     padding-top: 42px;
     padding-bottom: 10px;
 }
-#toggle-icon{
-    display: none;
-}
-.toggle-bar{
-    height: 5px;
-    width: 35px;
-    background-color: white;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    position: absolute;
-}
+
 .nav-link a{
     color: white;
     font-weight: 500;
@@ -54,7 +57,6 @@ nav{
     margin-left: 36px; 
 }
 .nav-link a:hover{
-    /* background-color: #7c73ff; */
     color: hsl(150, 100%, 83%);
 
 }
@@ -125,20 +127,14 @@ nav{
 }
 .player{
     padding: 15px;
-    /* width: 330px; */
     height: 474px;
-    /* border: 1px solid red; */
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .player-info{
-    /* border: 1px solid red; */
     padding-bottom: 18px;
 }
 .player-info img{
     width: 100%;
-    /* width: 300px;  */
-    /* height: 256px; */
-    
 }
 
 .player-info h2{
@@ -157,7 +153,8 @@ nav{
 
 /* Players Section Ends */
 
-/* Final Highlights Section Starts */
+/* Match Highlights Section Starts */
+
 .match-highlights{
     width: 85%;
     margin: 165px auto 0 auto;
@@ -205,9 +202,9 @@ nav{
 
 /* Final Highlights Section Ends */
 
-/*Additional For Upcoming Games Sections For Bonus */
-.upcoming-matches{
+/*Additional For Upcoming Matches Sections For Bonus */
 
+.upcoming-matches{
     margin:75px 0;
     padding: 25px;
     position: relative;
@@ -250,7 +247,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid rgb(148, 148, 148); */
     border-radius: 20px;
     padding: 0 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -301,7 +297,7 @@ nav{
     transition: linear background-color;
 }
 
-
+/*Additional For Upcoming Matches Sections Ends For Bonus */
 
 
 
@@ -335,30 +331,179 @@ footer p{
 /* footer ends */
 
 /* CSS Media Quesry Styles for Responsive of Mobile and Tablets */
+
+@media only screen and (max-width: 991px) and (min-width: 689px){
+
+    #toggle-icon{
+        display: block;
+        position: absolute;
+        left: 45px;
+        top: 50px;
+
+    }
+    .nav-link{
+        visibility: hidden;
+    }
+    #login-btn-1{
+        position: absolute;
+        right: 40px;
+    }
+
+    /* nav ends */
+
+    /* top section  */
+    .top-section{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    #top-part-1{
+        width: 45%;
+    }
+
+    /* palyers section  */
+
+    .players{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Match Highlights Section Starts */
+    .match-highlights{
+        width: 90%;
+    }
+
+    /* Upcoming Matches Sections */
+
+    .match-schedule{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    .match-schedule-flex{
+        display:flex;
+        flex-direction: column;
+    }
+    .schedule-nav{
+        display: none;
+    }
+
+     /* footer  */
+     footer img{
+        width: 55%;
+    }                                                       
+}
+
+/* Styles for Mobile Device */
+
+
 @media only screen and (max-width: 688px){
 
-    /* navbar  */
-    header{
-        width: 100%;
+
+    #toggle-icon{
+        display: block;
+        position: absolute;
+        left: 45px;
+        top: 50px;
+
+    }
+    .nav-link{
+        visibility: hidden;
+    }
+    #login-btn-1{
+        position: absolute;
+        right: 40px;
     }
 
-    .nav-link{
-        display:none;
-    }
- 
+    /* nav ends */
     
     /* top section  */
     .top-section{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        
     }
-    .login-btn{
-        position:absolute;
-        left: 350px;
+    .top-section h1{
+        margin: 0;
+        font-size: 50px;
+        width:400px;
     }
+    .half-width{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    #top-part-2{
+        text-align: center;
+        width: auto;
+        margin-top: 50px;
+    }
+    .top-section img{
+        width: 450px;
+        margin: 0;
+        
+    }
+
+    .watch-live-btn{
+        margin-top: 20px;
+    }
+
+    /* top section ends  */
+
+
+    /* players section starts  */
 
     .players{
         display: grid;
         grid-template-columns: 1fr;
+        
     }
+    .player{
+        padding: 0 15px 15px 15px;
+        height: auto;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        border-radius: 3%;
+    }
+    .player-info img{
+        border-radius: 3%;
+    }
+
+    /* Match Highlights Section Starts */
+    .match-highlights, .match-schedule{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+
+    /* Upcoming Matches Sections */
+
+
+    .match-schedule{
+        padding-bottom: 50px;
+    }
+    .upcoming-matches h2{
+        text-align: center;
+        margin: 0;
+    }
+    .upcoming-matches h3{
+        text-align: center;
+        margin: 0 0 20px 0;
+
+    }
+    .match-schedule-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .schedule-nav{
+        display: none;
+    }
+
+    /* footer  */
+    footer img{
+        width: 75%;
+    }
+
 }
+
