@@ -1,5 +1,6 @@
 /* font link import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 
 body{
@@ -16,9 +17,8 @@ a{
 .container{
     width: 80%;
     margin: auto;
-     
-    
 }
+
 /* Hearder */
 #header-background{
     background-color: #2D25A0;
@@ -40,16 +40,14 @@ nav{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    margin-left: 36px;
-     
+    margin-left: 36px; 
 }
-/* .login-btn, .watch-live-btn{
-    background-color:#E02C6D;
-    padding: 10px 24px;
-    height: 44px;
-    width:123px;
-    justify-content: center;
-} */
+.nav-link a:hover{
+    /* background-color: #7c73ff; */
+    color: hsl(150, 100%, 83%);
+
+}
+
 .login-btn .fas{
     margin-right: 8px;
 }
@@ -66,7 +64,8 @@ nav{
 
 /* top section starts */
 .top-section{
-    margin-top: 50px;
+    width: 85%;
+    margin: 50px auto 0 auto;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
     display: flex;
@@ -74,7 +73,7 @@ nav{
 
 }
 .top-section .half-width{
-    width: 48%;
+    width: 45%;
 }
 .top-section h1{
     font-weight: 700;
@@ -117,15 +116,17 @@ nav{
     /* border: 1px solid red; */
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
 }
-/* .player-info{
-    border: 1px solid red;
-} */
+.player-info{
+    /* border: 1px solid red; */
+    padding-bottom: 18px;
+}
 .player-info img{
     width: 100%;
     /* width: 300px;  */
     /* height: 256px; */
-    padding-bottom: 18px;
+    
 }
+
 .player-info h2{
     font-weight: 700;
     font-size: 28px;
@@ -135,19 +136,153 @@ nav{
 .player-info p{
     text-align: justify;
     color: #6C6C6C;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 26px;
 }
 
+/* Players Section Ends */
 
-/* Players Section Starts */
+/* Final Highlights Section Starts */
+.match-highlights{
+    width: 85%;
+    margin: 165px auto 0 auto;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+.match-highlights .left-part{
+    padding-right: 100px;
+}
+.match-highlights h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+}
+.match-highlights p{
+    text-align: justify;
+    margin-top: -30px;
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+}
+.match-highlights img{
+    width: 100%;
+}
+.watch-now-btn{
+    margin-top: 30px;
+}
+.watch-now-btn a{
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color:#E02C6D;
+    padding: 10px 24px;
+}
+.watch-now-btn .fas{
+    margin-left: 8px;
+}
 
+/* Final Highlights Section Ends */
 
+/*Additional For Upcoming Games Sections For Bonus */
+.upcoming-matches{
 
+    margin:75px 0;
+    padding: 25px;
+    position: relative;
+    min-height: 400px;
+    background-color: rgb(255, 185, 220);
+    
+}
+.match-schedule{
+    /* border: 1px solid red; */
+    width: 85%;
+    margin:auto;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.upcoming-matches h2{
+    font-size: 29px;
+    margin-left: 70px;
+    
+}
+.upcoming-matches h3{
+    color: #58a7fc;
+    margin-top: -20px;
+    margin-left: 70px;
+}
+.upcoming-matches .logo{
+    font-family: 'Niconne', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #10437A;
+}
+.teams-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid rgb(148, 148, 148); */
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.teams-info:hover {
+    transform:translateY(-2px) scale(1.05) ;
+}
+.each-team{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 
+}
+.each-team img{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
 
+}
+.each-team h4{
+        color: rgb(43, 43, 43);
+        font-weight: 200;
+        font-size: 16px;
+}
+.match-time{
+    text-align: right;
+}
+.match-time i{
+    margin-right: 10px;
+}
+.schedule-nav{
+    position: absolute;
+    left: 1275px;
+    bottom: 180px;
+    font-size: 2em;
+    
+}
+.schedule-nav:hover{
+    padding: 3px 17px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 1260px;
+    bottom: 180px;
+    font-size: 2em;
+    transition: linear background-color;
+}
 
 
 
@@ -155,5 +290,35 @@ nav{
 
 /* footer starts */
 footer{
-    min-height: 300px;
+    margin-top: 50px;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+footer img{
+    width: 483px;
+    /* border: 1px solid red; */
+}
+footer i{
+    color: #969BAB;
+    height: 32px;
+    width: 32px;
+    padding: 0 7px;
+    margin-top: 20px;
+}
+footer p{
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+
+/* footer ends */
+
+/* .login-btn:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: wheat;
+} */
