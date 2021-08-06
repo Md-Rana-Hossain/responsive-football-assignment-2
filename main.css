@@ -35,6 +35,17 @@ nav{
     padding-top: 42px;
     padding-bottom: 10px;
 }
+#toggle-icon{
+    display: none;
+}
+.toggle-bar{
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+}
 .nav-link a{
     color: white;
     font-weight: 500;
@@ -66,8 +77,6 @@ nav{
 .top-section{
     width: 85%;
     margin: 50px auto 0 auto;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     display: flex;
     justify-content: space-between;
 
@@ -99,6 +108,11 @@ nav{
 .top-section img{
     width: 100%;
      
+}
+
+.top-section img:hover{
+    transform:rotate(-360deg);
+    transition: transform 2s ease-in;
 }
 
 /* Players Section Starts */
@@ -213,6 +227,9 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
 }
+.match-schedule a:visited{
+    color: black;
+}
 .upcoming-matches h2{
     font-size: 29px;
     margin-left: 70px;
@@ -317,8 +334,31 @@ footer p{
 
 /* footer ends */
 
-/* .login-btn:hover{
-    transform: scale(1.1);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: wheat;
-} */
+/* CSS Media Quesry Styles for Responsive of Mobile and Tablets */
+@media only screen and (max-width: 688px){
+
+    /* navbar  */
+    header{
+        width: 100%;
+    }
+
+    .nav-link{
+        display:none;
+    }
+ 
+    
+    /* top section  */
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .login-btn{
+        position:absolute;
+        left: 350px;
+    }
+
+    .players{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
